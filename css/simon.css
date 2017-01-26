@@ -1,7 +1,42 @@
 html, body {
-  background-color: black;
+  background-color: #222;
   height: 100%;
+  margin: 0px;
 }
+/* Logo Styling */
+#header {
+  width: 90%;
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  text-align: center;
+}
+  #logo {
+    width: 191.4px;
+    height: 73.2px;
+    background-size: 80%;
+    margin: auto;
+    padding: 10px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+    #II{
+      margin-top: -1px;
+    }
+  #score{
+    font-family: Courier;
+    font-size: 12px;
+    font-weight: 300;
+    color: #FFF;
+  }
+  #high-score{
+    font-family: Courier;
+    font-size: 13px;
+    font-weight: 300;
+    color: #FFF;
+    display: none;
+  }
 
 /* Container for note boxes */
 #simon {
@@ -13,18 +48,27 @@ html, body {
 }
 
 /* Note box elements */
+.note-box-wrap {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
 .note-box {
   width: 100pt;
   height: 100pt;
-  margin: 0 10pt;
   border-width: 2pt;
+  border-radius: 10px; /* Rounded corners are child friendly */
   cursor: pointer;
+  display: table-cell;
 }
-
+.note-box-row {
+  display: table-row;
+}
 /* Per-note styles */
 #c {
     background-color: rgba(238, 0, 55, 0.4);
     border: 3px solid rgba(238, 0, 55, 1);
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
 }
 
 #c.active {
@@ -42,6 +86,8 @@ html, body {
 #d {
     background-color: rgba(255, 176, 0, 0.4);
     border: 3px solid rgba(255, 176, 0, 1);
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
 }
 
 #d.active {
@@ -59,6 +105,8 @@ html, body {
 #e {
     background-color: rgba(17, 57, 187, 0.4);
     border: 3px solid rgba(17, 57, 187, 1);
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
 }
 
 #e.active {
@@ -74,18 +122,20 @@ html, body {
 }
 
 #f {
-    background-color: rgba(85, 229, 0, 0.4);
-    border: 3px solid rgba(85, 229, 0, 1);
+    background-color: rgba(46, 204, 113,  0.4);
+    border: 3px solid rgba(46, 204, 113,  1);
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
 }
 
 #f.active {
-  background-color: rgba(85, 229, 0, 1);
+  background-color: rgba(46, 204, 113, 1);
 }
 
 #f.active:hover {
-  background-color: rgba(85, 229, 0, 1);
+  background-color: rgba(46, 204, 113, 1);
 }
 
 #f:hover {
-  background-color: rgba(85, 229, 0, 0.6);
+  background-color: rgba(46, 204, 113, 0.6);
 }

