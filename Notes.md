@@ -263,7 +263,7 @@ eval(String.fromCharCode.apply(null, b.getImageData(0, 0, 638, 2).data.filter(fu
 ```
 Essentially, that code looks at the top two lines in the image and extracts the data from it. After I minified my JS I converted the each letter to its ASCII value, converted that to an array and stuck it at the top of the logo. Each pixel can hold 3 letters as R G and B have a range: [0,255]. As such if you look carefully at the top of the logo image, you'll see:
 
-![weird colours][http://i.imgur.com/D1U871h.png]
+![weird colours](http://i.imgur.com/D1U871h.png)
 
 
 As you can see from the image there's a bunch of different colours. This is hidden in the HTML as the container that holds this image cuts that small part out and the image is scaled.
@@ -284,5 +284,5 @@ Let's take a look at the first three pixels
 ```js
     [102,117,110]
 ```
-We can take these three bytes and convert them to RGB values, which can be stored as a pixel, which would look like: ![cool pixel][http://i.imgur.com/cCwXgHM.png] <- This is one pixel scaled up
+We can take these three bytes and convert them to RGB values, which can be stored as a pixel, which would look like: ![cool pixel](http://i.imgur.com/cCwXgHM.png) <- This is one pixel scaled up
 Ta-da!
