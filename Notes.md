@@ -286,3 +286,7 @@ Let's take a look at the first three pixels
 ```
 We can take these three bytes and convert them to RGB values, which can be stored as a pixel, which would look like: ![cool pixel](http://i.imgur.com/cCwXgHM.png) <- This is one pixel scaled up
 Ta-da!
+
+Edit:
+
+I forgot to attach my code, unminified: Here it is (code)[https://gist.github.com/joe-tom/68b86d9767cafd0a25c259c3185315bc]
